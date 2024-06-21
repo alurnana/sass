@@ -1,0 +1,68 @@
+@use './colors';
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 155px 30px 25px;
+    background-color: colors.$backgroundColorWhite;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.1);
+}
+
+.footer-social-item {
+    h6 {
+        font-size: 18px;
+        line-height: 16px;
+        color: colors.$commonTextColor;
+    }
+
+    ul {
+        margin-top: 8px;
+    }
+
+    li {
+        font-size: 14px;
+        line-height: 30px;
+        color: colors.$commonTextColor;
+    }
+}
+
+.social-media {
+    margin-bottom: 33px;
+
+    &-items {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+
+        a {
+            display: flex;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            border: 1px solid rgba(70, 163, 88, 0.1);
+            border-radius: 4px;
+            padding: 7px;
+        }
+    }
+}
+
+.accept-card {
+    img {
+        margin-top: 13px;
+    }
+}
+
+.rights {
+    display: flex;
+    justify-content: center;
+
+    p {
+        padding-top: 6px;
+        padding-bottom: 15px;
+        font-size: 14px;
+        line-height: 30px;
+        color: colors.$commonTextColor;
+    }
+}

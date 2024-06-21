@@ -1,0 +1,59 @@
+@use './colors';
+
+.find-more {
+    margin: 95px 0 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.find-card {
+    display: flex;
+    width: 585px;
+    background-color: colors.$backgroundColorWhite;
+    justify-content: flex-end;
+
+    &>img {
+        height: 285px;
+        width: 290px;
+        margin-top: -45px;
+    }    
+}
+
+.find-text {
+    padding-right: 30px;
+    padding: 35px 30px 45px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    h3 {
+        width: 155px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 24px;
+        color: colors.$commonTextColor;
+        text-align: right;
+    }
+    
+    p {
+        margin: 10px 0 25px;
+        font-size: 14px;
+        line-height: 24px;
+        color: colors.$commonSubtitleColor;
+        text-align: right;
+    }
+    
+    a {
+        padding: 10px 25px;
+        background-color: colors.$backgroundColorGreen;
+        border-radius: 6px;
+        text-transform: capitalize;
+        color: colors.$backgroundColorWhite;
+        font-size: 14px;
+
+        &:hover {
+            background-color: colors.$hoverColorDarkGreen;
+        }
+    }
+}

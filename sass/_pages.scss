@@ -1,0 +1,31 @@
+@use './colors';
+
+.pages {
+    display: flex;
+    justify-content: flex-end;
+
+    &-block {
+        display: flex;
+        margin-left: 10px;
+        padding: 9px 13px;
+        border: 1px solid rgba(229, 229, 229, 1);
+        border-radius: 7px;
+        font-size: 18px;
+        line-height: 16px;
+
+        &-arrow {
+            padding: 9px;
+        }
+
+        a:hover {
+            border: 1px solid colors.$commonGreenColor;
+            background-color: colors.$commonGreenColor;
+            color: colors.$backgroundColorWhite;
+            font-weight: 700;
+        }
+
+        &:first-child {
+            margin-left: 0px;
+        }
+    }
+}

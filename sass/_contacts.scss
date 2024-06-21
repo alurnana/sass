@@ -1,0 +1,20 @@
+@use './colors';
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 23px;
+    background: linear-gradient(to right, rgba(237, 246, 239, 1), rgba(82, 195, 104, 1));
+
+    &-item {
+        display: flex;
+
+        p, a {
+            color: colors.$commonTextColor;
+            font-size: 14px;
+            line-height: 22px;
+            margin-left: 10px;
+        }
+    }
+}

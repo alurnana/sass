@@ -1,0 +1,37 @@
+@use './colors';
+
+.assortment {
+    width: 840px;
+}
+
+.assort-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 16px;
+    color: colors.$commonTextColor;
+}
+
+.nav-plants {
+    ul {
+        display: flex;
+        gap: 40px;
+    }
+    & a:hover {
+        color: colors.$commonGreenColor;
+        font-weight: 700;
+        padding-bottom: 7px;
+        border-bottom: 2px solid colors.$commonGreenColor;
+    }
+}
+
+.nav-sort {
+    display: flex;
+
+    a {
+        margin-left: 10px;
+        display: flex;
+        gap: 5px;
+    }
+}

@@ -1,0 +1,111 @@
+@use './colors';
+
+.assort-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 258px;
+    margin-right: 33px;
+    margin-bottom: 70px;
+
+    &::before {
+        content: "";
+        background-color: colors.$backgroundColorGreen;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: none;
+        z-index: 1;
+        transition: 5s;
+    }
+
+    &:hover::before {
+        display: block;
+    }
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        height: 300px;
+        position: relative;
+        padding: 25px 5px;
+        background-color: colors.$backgroundColorWhite;
+    }
+
+    >img {
+        width: 250px;
+        height: 250px;
+    }
+
+    &-sale {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 7px 8px;
+        color: colors.$backgroundColorWhite;
+        background-color: colors.$backgroundColorGreen;
+        text-transform: uppercase;
+    }
+}
+
+.card-hover {
+    justify-content: center;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 7px;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        padding: 7px;
+        background-color: colors.$backgroundColorWhite;
+        margin-right: 10px;
+        border-radius: 4px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.card:hover .card-hover {
+    display: flex;
+}
+
+.card-info {
+    padding-top: 15px;
+
+    a {
+        font-size: 16px;
+        line-height: 16px;
+        color: colors.$commonTextColor;
+    }
+
+    p {
+        margin-top: 6px;
+        font-size: 18px;
+        line-height: 18px;
+        color: colors.$backgroundColorGreen;
+        font-weight: 700;
+    }
+
+    span {
+        color: rgba(203, 203, 203, 1);
+        text-decoration: line-through;
+        margin-left: 15px;
+        font-weight: 400;
+    }
+}

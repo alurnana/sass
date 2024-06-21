@@ -1,0 +1,40 @@
+@use './colors';
+
+.flexwrap {
+    display: flex;
+}
+
+.sidebar {
+    margin-right: 50px;
+    width: 310px;
+    background-color: colors.$backgroundColorWhite;
+}
+
+.categories {
+    margin-top: 14px;
+    margin-left: 18px;
+
+    &-title {
+        padding: 14px 0 7px;
+        font-size: 18px;
+        line-height: 16px;
+        color: colors.$commonTextColor;
+    }
+
+    a {
+        margin-left: 12px;
+        color: colors.$commonTextColor;
+        font-size: 15px;
+        line-height: 40px;
+        font-weight: 400;
+
+        &:hover {
+            font-weight: 700;
+            color: colors.$commonGreenColor;
+        }
+    }
+}
+
+.sale {
+    margin-top: 377px;
+}

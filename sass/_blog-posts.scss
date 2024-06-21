@@ -1,0 +1,71 @@
+@use './colors';
+
+.blog-posts {
+    h2 {
+        font-weight: 700;
+        font-size: 30px;
+        color: colors.$commonTextColor;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    &>p {
+        margin: 10px 0 35px;
+        color: colors.$commonSubtitleColor;
+        text-align: center;
+        line-height: 24px;
+        font-size: 14px;
+    } 
+}
+
+.blog-posts-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-card {
+    background-color: colors.$backgroundColorWhite;
+    width: 268px;
+
+    &-text {
+        padding: 10px 12px;
+
+        h4 {
+            margin: 4px 0;
+            color: colors.$commonTextColor;
+            font-size: 20px;
+            line-height: 26px;
+            width: 190px;
+        }
+    }
+
+    &-info {
+        font-size: 14px;
+        font-weight: 500;
+        color: colors.$commonGreenColor;
+    }
+
+    &-desc {
+        color: colors.$commonSubtitleColor;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &-button {
+        display: flex;
+        gap: 3px;
+        margin-top: 10px;
+        color: colors.$commonTextColor;
+        font-size: 14px;
+        font-weight: 500;
+
+        img {
+            vertical-align: middle;
+        }
+        
+        &:hover {
+            color: colors.$commonGreenColor;
+        }  
+    }
+}
