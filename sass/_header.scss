@@ -6,6 +6,16 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 15px;
+
+    &-icons {
+        display: flex;
+        gap: 30px;
+        align-items: baseline;
+
+        svg:hover {
+            fill: colors.$borderColorGreen;
+        }
+    }
 }
 
 .logo img {

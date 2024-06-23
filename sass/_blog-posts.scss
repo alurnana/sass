@@ -66,6 +66,12 @@
         
         &:hover {
             color: colors.$commonGreenColor;
+
+            svg {
+                fill: colors.$commonGreenColor;
+            }
         }  
+        
     }
+
 }

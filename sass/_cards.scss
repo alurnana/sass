@@ -53,6 +53,10 @@
         color: colors.$backgroundColorWhite;
         background-color: colors.$backgroundColorGreen;
         text-transform: uppercase;
+    }   
+
+    &-hover svg:hover {
+        fill: colors.$borderColorGreen;
     }
 }
 

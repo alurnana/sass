@@ -22,12 +22,24 @@ li {
   width: 1200px;
 }
 
+svg path {
+  fill: inherit;
+}
+
 .header {
   border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 15px;
+}
+.header-icons {
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+}
+.header-icons svg:hover {
+  fill: #46A358;
 }
 
 .logo img {
@@ -338,6 +350,9 @@ li {
   background-color: rgb(70, 163, 88);
   text-transform: uppercase;
 }
+.card-hover svg:hover {
+  fill: #46A358;
+}
 
 .card-hover {
   justify-content: center;
@@ -394,6 +409,7 @@ li {
 }
 .pages-block {
   display: flex;
+  align-items: center;
   margin-left: 10px;
   padding: 9px 13px;
   border: 1px solid rgb(229, 229, 229);
@@ -526,6 +542,9 @@ li {
 .blog-card-button:hover {
   color: rgb(70, 163, 88);
 }
+.blog-card-button:hover svg {
+  fill: rgb(70, 163, 88);
+}
 
 .pros_section {
   margin-top: 90px;
@@ -626,6 +645,7 @@ li {
 }
 .contacts-item {
   display: flex;
+  align-items: center;
 }
 .contacts-item p, .contacts-item a {
   color: rgb(61, 61, 61);
@@ -667,7 +687,7 @@ li {
 .social-media-items a {
   display: flex;
 }
-.social-media-items img {
+.social-media-items svg {
   width: 30px;
   height: 30px;
   border: 1px solid rgba(70, 163, 88, 0.1);
